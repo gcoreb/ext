@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "Get off facebook!",
+  "description": "This extension gets you to stop using facebook. Learning project by Bryan.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Click here!"
+  },
+    "icons":{
+        "16": "img.gif"
+    },
+  "content_scripts": [
+  {
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "run_at": "document_start"
+   }
+    ],
+    "permissions": [
+    "tabs",
+    "https://www.facebook.com/",
+        "storage"
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    }
+}

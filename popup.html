@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link data-require="bootstrap@*" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <script src="popup.js"></script>
+       <style>
+      body {
+        max-width: 1000px;
+      }
+      #container #content {
+    display: none;
+}
+#container:target #content {
+    display: block;
+}
+#container:target a {
+    display: none;
+}
+
+      
+    </style>
+  </head>
+
+  <body>
+    <button id='one' class='btn btn-default'>Clear</button>
+    <hr/>
+    <div id='container'>
+    <a href='#container'>?</a>
+    <div id='content'>    <h1>Click the button to clear the count</h1>
+Happy no-facebooking!
+</div>
+  </div>
+    <!--<button class='btn btn-primary'>2 sigh</button>
+    <button class='btn btn-success'>3 :)</button>
+    <button class='btn btn-danger'>4 wait</button>
+    <button class='btn btn-info'>5 yeah</button>
+    <button class='btn btn-warning'>6 :(</button>!-->
+
+  </body>
+
+</html>
